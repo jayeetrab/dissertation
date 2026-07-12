@@ -124,24 +124,15 @@ function AppContent() {
   return (
     <>
       <Nav />
-      <AnimatePresence mode="wait">
-        <motion.main 
-          key={location.pathname}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
-          style={{ flex: 1, padding: '40px 32px', maxWidth: '1400px', margin: '0 auto', width: '100%' }}
-        >
-          <Routes location={location}>
-            <Route path="/"          element={<Dashboard />} />
-            <Route path="/run"       element={<RunExperiment />} />
-            <Route path="/evaluate"  element={<Evaluate />} />
-            <Route path="/results"   element={<Results />} />
-            <Route path="/compare"   element={<Compare />} />
-          </Routes>
-        </motion.main>
-      </AnimatePresence>
+      <main style={{ flex: 1, padding: '40px 32px', maxWidth: '1400px', margin: '0 auto', width: '100%' }}>
+        <Routes location={location}>
+          <Route path="/"          element={<Dashboard />} />
+          <Route path="/run"       element={<RunExperiment />} />
+          <Route path="/evaluate"  element={<Evaluate />} />
+          <Route path="/results"   element={<Results />} />
+          <Route path="/compare"   element={<Compare />} />
+        </Routes>
+      </main>
     </>
   )
 }
