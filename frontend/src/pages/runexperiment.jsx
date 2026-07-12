@@ -90,7 +90,7 @@ function OutputPanel({ title, content, chunks, tokens, color, delay = 0 }) {
                       key={i} 
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.05 }}
+                      transition={{ }}
                       style={{
                         background: 'var(--bg2)', border: '1px solid var(--border)',
                         borderRadius: 'var(--radius-sm)', padding: '16px',
@@ -262,7 +262,7 @@ export default function RunExperiment() {
               key={task.id} 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: Math.min(index * 0.05, 0.3) }}
+              transition={{ }}
               className="card" 
               style={{
                 borderLeft: `4px solid ${CATEGORY_COLORS[task.category]}`
@@ -311,7 +311,7 @@ export default function RunExperiment() {
                     content={result.baseline_output}
                     tokens={result.baseline_tokens_used}
                     color="var(--amber)"
-                    delay={0.1}
+                   
                   />
                   <OutputPanel
                     title="RAG System"
@@ -319,7 +319,7 @@ export default function RunExperiment() {
                     chunks={result.retrieved_chunks}
                     tokens={result.rag_tokens_used}
                     color="var(--green)"
-                    delay={0.2}
+                   
                   />
                 </div>
               )}

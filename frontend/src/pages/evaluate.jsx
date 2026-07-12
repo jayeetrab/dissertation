@@ -382,7 +382,7 @@ export default function Evaluate() {
                 output={result.baseline_output}
                 existingScore={result.baseline_scores}
                 onSaved={loadResults}
-                delay={0.1}
+               
               />
               <ScoreForm
                 resultId={result.result_id}
@@ -391,7 +391,7 @@ export default function Evaluate() {
                 output={result.rag_output}
                 existingScore={result.rag_scores}
                 onSaved={loadResults}
-                delay={0.2}
+               
               />
             </div>
           </motion.div>

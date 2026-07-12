@@ -282,7 +282,7 @@ export default function Results() {
       </div>
 
       {/* ── KPIs ─────────────────────────────────────────────── */}
-      <Section title="Summary Statistics" delay={0.1}>
+      <Section title="Summary Statistics">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginBottom: '20px' }}>
           <KPI label="Tasks Run"     value={results.length}  sub="With at least one output" />
           <KPI label="Tasks Scored"  value={scored.length}   sub="Both systems scored"      color="var(--purple)" />
@@ -298,7 +298,7 @@ export default function Results() {
 
       {/* ── Cross-model validation ───────────────────────────── */}
       {validation && (
-        <Section title="Cross-Model Validation" delay={0.15}>
+        <Section title="Cross-Model Validation">
           <div className="card" style={{ padding: '32px' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '24px', maxWidth: '760px' }}>
               A second judge ({validation.judge_b}) re-scored the outputs, {validation.scope},
@@ -363,7 +363,7 @@ export default function Results() {
 
       {/* ── Base-model robustness ────────────────────────────── */}
       {modelCmp && (
-        <Section title="Base-Model Robustness" delay={0.18}>
+        <Section title="Base-Model Robustness">
           <div className="card" style={{ padding: '32px' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '24px', maxWidth: '780px' }}>
               The same experiment run with a stronger generator ({modelCmp.models[1]?.model}) in place of
@@ -402,7 +402,7 @@ export default function Results() {
 
       {/* ── Accuracy by category ─────────────────────────────── */}
       {scored.length > 0 && (
-        <Section title="Accuracy by Task Category" delay={0.2}>
+        <Section title="Accuracy by Task Category">
           <div className="card" style={{ padding: '32px' }}>
             <ResponsiveContainer width="100%" height={320}>
               <BarChart data={catData} barCategoryGap="28%" margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -426,7 +426,7 @@ export default function Results() {
 
       {/* ── Radar chart ─────────────────────────────────────── */}
       {scored.length > 0 && (
-        <Section title="Multi-Dimensional Quality Comparison" delay={0.3}>
+        <Section title="Multi-Dimensional Quality Comparison">
           <div className="card" style={{ padding: '32px', display: 'flex', justifyContent: 'center' }}>
             <ResponsiveContainer width="100%" height={400}>
               <RadarChart data={radarData} outerRadius={140}>
@@ -444,7 +444,7 @@ export default function Results() {
 
       {/* ── Hallucination breakdown ──────────────────────────── */}
       {hallucTypeData.length > 0 && (
-        <Section title="Hallucination Type Breakdown" delay={0.4}>
+        <Section title="Hallucination Type Breakdown">
           <div className="card" style={{ padding: '32px' }}>
             <ResponsiveContainer width="100%" height={260}>
               <BarChart data={hallucTypeData} layout="vertical" margin={{ top: 0, right: 30, left: 10, bottom: 0 }}>
@@ -465,7 +465,7 @@ export default function Results() {
 
       {/* ── RAGAS metrics ────────────────────────────────────── */}
       {ragasResults.length > 0 && (
-        <Section title="RAGAS Automated Metrics (RAG system)" delay={0.5}>
+        <Section title="RAGAS Automated Metrics (RAG system)">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginBottom: '24px' }}>
             <KPI label="Avg Faithfulness"      value={avgFaithfulness}     color="var(--teal)"   sub="0–1 · Answers grounded in context" />
             <KPI label="Avg Answer Relevancy"  value={avgRelevancy}        color="var(--accent)" sub="0–1 · Answer addresses the question" />
@@ -508,7 +508,7 @@ export default function Results() {
       )}
 
       {/* ── Full results table ───────────────────────────────── */}
-      <Section title="Full Results Table" delay={0.6}>
+      <Section title="Full Results Table">
         <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>

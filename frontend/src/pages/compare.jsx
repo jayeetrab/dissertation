@@ -148,7 +148,7 @@ function OutputCard({ subset, result, running, delay = 0 }) {
                       key={i} 
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      transition={{ delay: i * 0.05 }}
+                      transition={{ }}
                       style={{
                         background: 'var(--bg2)', border: '1px solid var(--border)',
                         borderRadius: 'var(--radius-sm)', padding: '16px',
@@ -307,7 +307,7 @@ export default function Compare() {
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: Math.min(index * 0.05, 0.3) }}
+                    transition={{ }}
                     key={task.id}
                     onClick={() => setSelectedTask(task)}
                     style={{
@@ -441,7 +441,7 @@ export default function Compare() {
                     subset={subset}
                     result={results[subset.id]}
                     running={!!running[subset.id]}
-                    delay={0.1 + (i * 0.1)}
+                   
                   />
                 ))}
               </div>

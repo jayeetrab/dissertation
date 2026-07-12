@@ -110,10 +110,10 @@ export default function Dashboard() {
 
       {/* Stats grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '32px' }}>
-        <StatCard label="Total Tasks"   value={stats?.total_tasks}   sub="Across 5 categories" delay={0.1} />
-        <StatCard label="Tasks Run"     value={stats?.tasks_run}     sub="Results generated" delay={0.15} />
-        <StatCard label="Tasks Scored"  value={stats?.tasks_auto_scored ?? stats?.tasks_scored}  sub="Rubric scored" delay={0.2} />
-        <StatCard label="Chunks in DB"  value={stats?.chunks_in_db}  sub="Planning document segments" delay={0.25} />
+        <StatCard label="Total Tasks"   value={stats?.total_tasks}   sub="Across 5 categories" />
+        <StatCard label="Tasks Run"     value={stats?.tasks_run}     sub="Results generated" />
+        <StatCard label="Tasks Scored"  value={stats?.tasks_auto_scored ?? stats?.tasks_scored}  sub="Rubric scored" />
+        <StatCard label="Chunks in DB"  value={stats?.chunks_in_db}  sub="Planning document segments" />
       </div>
 
       {/* Accuracy & Hallucination Stats */}
@@ -123,25 +123,25 @@ export default function Dashboard() {
             label="Avg Baseline Accuracy"
             value={stats?.avg_baseline_accuracy ? `${stats.avg_baseline_accuracy}` : '—'}
             sub="Out of 5"
-            delay={0.3}
+           
           />
           <StatCard
             label="Avg RAG Accuracy"
             value={stats?.avg_rag_accuracy ? `${stats.avg_rag_accuracy}` : '—'}
             sub="Out of 5"
-            delay={0.35}
+           
           />
           <StatCard
             label="Baseline Hallucination"
             value={stats?.hallucination_rate_baseline != null ? `${(stats.hallucination_rate_baseline * 100).toFixed(0)}%` : '—'}
             sub="Rate of false claims"
-            delay={0.4}
+           
           />
           <StatCard
             label="RAG Hallucination"
             value={stats?.hallucination_rate_rag != null ? `${(stats.hallucination_rate_rag * 100).toFixed(0)}%` : '—'}
             sub="Rate of false claims"
-            delay={0.45}
+           
           />
         </div>
       )}
@@ -150,7 +150,7 @@ export default function Dashboard() {
       {(validation || modelCmp) && (
         <motion.div
           initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="card"
           style={{ marginBottom: '40px', padding: '20px 24px', borderLeft: '3px solid var(--accent)' }}
         >
@@ -187,7 +187,7 @@ export default function Dashboard() {
                 key={key}
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 + (index * 0.05), duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 style={{ 
                   display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                   padding: '12px 16px', background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)'
@@ -216,7 +216,7 @@ export default function Dashboard() {
                 key={s.step}
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 + (index * 0.05), duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 style={{ 
                   display: 'flex', alignItems: 'center', gap: '16px',
                   padding: '12px 16px', background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)',

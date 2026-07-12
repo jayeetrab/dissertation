@@ -44,14 +44,17 @@ function Nav() {
       zIndex: 100,
     }}>
       {/* Logo */}
-      <div style={{ marginRight: '32px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <div style={{
-          width: '24px', height: '24px', borderRadius: '4px',
-          background: 'var(--text-primary)', display: 'flex',
-          alignItems: 'center', justifyContent: 'center',
-          fontSize: '12px', fontWeight: '700', color: 'white',
-          fontFamily: 'var(--font-sans)',
-        }}>P</div>
+      <div style={{ marginRight: '32px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <img 
+          src="/logo.jpg" 
+          alt="University of Bristol" 
+          style={{ 
+            width: '28px', 
+            height: '28px', 
+            borderRadius: '4px', 
+            objectFit: 'cover' 
+          }} 
+        />
         <span style={{
           fontFamily: 'var(--font-sans)',
           fontWeight: '600', fontSize: '15px', color: 'var(--text-primary)',
