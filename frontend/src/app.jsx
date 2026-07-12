@@ -3,11 +3,11 @@ import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router
 import { motion, AnimatePresence } from 'framer-motion'
 import { LayoutDashboard, Play, CheckCircle, BarChart2, SplitSquareHorizontal } from 'lucide-react'
 
-import Dashboard from './pages/Dashboard.jsx'
-import RunExperiment from './pages/RunExperiment.jsx'
-import Evaluate from './pages/Evaluate.jsx'
+import Dashboard from './pages/dashboard.jsx'
+import RunExperiment from './pages/runexperiment.jsx'
+import Evaluate from './pages/evaluate.jsx'
 import Results from './pages/results.jsx'
-import Compare from './pages/Compare.jsx'
+import Compare from './pages/compare.jsx'
 
 // ── API base URL ──────────────────────────────────────────────
 export const API = (() => {
