@@ -1,0 +1,30 @@
+# PlanningRAG — Python Backend Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Web Framework ─────────────────────────────────────────────
+fastapi==0.115.4
+uvicorn[standard]==0.32.0     # ASGI server for FastAPI
+python-multipart==0.0.12      # needed for FastAPI file uploads
+
+# ── LLM + Embeddings ──────────────────────────────────────────
+openai==1.54.4                 # OpenAI Python SDK (GPT-4o-mini, embeddings)
+langchain==0.3.7               # LLM orchestration framework
+langchain-openai==0.2.6        # LangChain ↔ OpenAI bridge
+langchain-community==0.3.7     # Community integrations (PDF loader, Chroma)
+
+# ── Vector Database ───────────────────────────────────────────
+chromadb==0.5.18               # Local vector store (persists to disk)
+
+# ── Document Loading ──────────────────────────────────────────
+pypdf==5.1.0                   # PDF parsing (used by PyPDFLoader)
+
+# ── Data Validation ───────────────────────────────────────────
+pydantic==2.9.2                # Data models & request/response validation
+
+# ── Evaluation ────────────────────────────────────────────────
+ragas==0.2.6                   # RAG evaluation framework (faithfulness, relevancy)
+datasets==3.1.0                # HuggingFace datasets (required by RAGAS)
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv==1.0.1           # Load .env files
+httpx==0.27.2                  # Async HTTP (used internally by FastAPI + OpenAI SDK)

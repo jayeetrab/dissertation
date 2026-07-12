@@ -1,0 +1,52 @@
+{
+  "judge_a": "gpt-4o",
+  "judge_b": "gpt-4.1",
+  "n_outputs": 240,
+  "scope": "all 120 tasks",
+  "metrics": [
+    {
+      "metric": "accuracy",
+      "exact_agreement": 0.4,
+      "mean_abs_diff": 0.81,
+      "spearman": 0.5
+    },
+    {
+      "metric": "completeness",
+      "exact_agreement": 0.438,
+      "mean_abs_diff": 0.82,
+      "spearman": 0.32
+    },
+    {
+      "metric": "planning usefulness",
+      "exact_agreement": 0.392,
+      "mean_abs_diff": 0.82,
+      "spearman": 0.46
+    },
+    {
+      "metric": "grounding",
+      "exact_agreement": 0.688,
+      "mean_abs_diff": 0.31,
+      "spearman": 0.65
+    }
+  ],
+  "hallucination": {
+    "agreement": 0.579,
+    "kappa": 0.12
+  },
+  "direction": [
+    {
+      "judge": "gpt-4o",
+      "baseline": 2.57,
+      "rag": 3.39,
+      "delta": 0.82,
+      "p": 0.0
+    },
+    {
+      "judge": "gpt-4.1",
+      "baseline": 3.57,
+      "rag": 3.77,
+      "delta": 0.2,
+      "p": 0.03907
+    }
+  ]
+}

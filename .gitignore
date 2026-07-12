@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / frontend build
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Vector store (large): regenerate with ingest.py or restore to the host disk
+chroma_db/
+
+# Result backups and old runs (keep the current small result files)
+results/results_store_backup_*.json
+results/results_2026*.json
+
+# OS / misc
+.DS_Store
+all_code.txt

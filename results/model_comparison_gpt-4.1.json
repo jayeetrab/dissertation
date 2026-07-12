@@ -1,0 +1,19 @@
+{
+  "model": "gpt-4.1",
+  "n": 120,
+  "scope": "all 120 tasks",
+  "baseline": {
+    "cited": 385,
+    "fabricated": 19,
+    "misattributed": 18,
+    "outputs_fabrication": 7,
+    "outputs_misattribution": 8
+  },
+  "rag": {
+    "cited": 142,
+    "fabricated": 1,
+    "misattributed": 4,
+    "outputs_fabrication": 1,
+    "outputs_misattribution": 3
+  }
+}

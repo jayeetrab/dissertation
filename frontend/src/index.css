@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+:root {
+  /* Premium Dark Glassmorphic Theme */
+  --bg-gradient: radial-gradient(circle at top left, #1c1c28, #09090b 40%, #000000 100%);
+  
+  /* Glass colors */
+  --bg:        #09090b; /* Page base / inset panels */
+  --bg2:       rgba(24, 24, 27, 0.4);   /* Card glass */
+  --bg3:       rgba(255, 255, 255, 0.05); /* Hover glass */
+  --bg-solid:  #18181b; /* Fallback solid dark */
+  
+  --border:    rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.04);
+  --border2:   rgba(255, 255, 255, 0.15);
+  
+  --text:      #f4f4f5;
+  --text-primary: #ffffff;
+  --text2:     #a1a1aa;
+  --text-secondary: #a1a1aa;
+  --text3:     #71717a;
+  --text-tertiary: #71717a;
+  
+  /* Accent colors tuned for dark mode */
+  --accent:    #60a5fa; /* Glow Blue */
+  --accent2:   #93c5fd;
+  --accent-subtle: rgba(96, 165, 250, 0.1);
+  
+  /* Muted brights */
+  --green:     #34d399;
+  --amber:     #fbbf24;
+  --red:       #f87171;
+  --purple:    #a78bfa;
+  --teal:      #2dd4bf;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-serif: Georgia, "Times New Roman", serif;
+  
+  --radius-sm: 8px;
+  --radius:    16px;
+  --radius-lg: 24px;
+  
+  /* Deep structural shadows */
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow:    0 8px 32px rgba(0,0,0,0.5);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.6);
+  --glow:      0 0 20px rgba(96, 165, 250, 0.15);
+  
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html, body { height: 100%; }
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* Typography */
+h1, .text-display { 
+  font-weight: 600; 
+  font-size: 28px; 
+  line-height: 1.2; 
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+h2, .text-h2 { 
+  font-weight: 500; 
+  font-size: 18px; 
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+h3, .text-h3 { 
+  font-weight: 500; 
+  font-size: 14px; 
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+/* Glass Cards */
+.card {
+  background: var(--bg2);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.card:hover {
+  border-color: var(--border2);
+  box-shadow: var(--shadow-lg);
+}
+.card-sm { padding: 16px; border-radius: var(--radius-sm); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+  padding: 10px 20px; border-radius: 100px; /* Pill buttons look great in glass */
+  border: 1px solid transparent; cursor: pointer; transition: var(--transition);
+  text-decoration: none; white-space: nowrap;
+}
+.btn-primary {
+  background: var(--accent); color: #000; font-weight: 600;
+  box-shadow: var(--glow);
+}
+.btn-primary:hover:not(:disabled) { 
+  background: var(--accent2); 
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.3);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: rgba(255,255,255,0.03); color: var(--text);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.btn-secondary:hover:not(:disabled) { 
+  background: rgba(255,255,255,0.08); 
+  border-color: var(--border2);
+}
+.btn-ghost {
+  background: transparent; color: var(--text2);
+}
+.btn-ghost:hover:not(:disabled) { 
+  background: rgba(255,255,255,0.05); color: var(--text-primary); 
+}
+.btn-danger { background: var(--red); color: white; }
+.btn-danger:hover:not(:disabled) { box-shadow: 0 0 20px rgba(248, 113, 113, 0.3); transform: translateY(-1px); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; box-shadow: none !important; }
+.btn-sm { padding: 6px 14px; font-size: 12px; }
+
+/* Badges */
+.badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 500;
+  padding: 4px 10px; border-radius: 100px;
+  font-family: var(--font-mono); letter-spacing: 0.02em;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+.badge-blue   { background: rgba(96, 165, 250, 0.1); color: var(--accent); border-color: rgba(96, 165, 250, 0.2); }
+.badge-green  { background: rgba(52, 211, 153, 0.1); color: var(--green); border-color: rgba(52, 211, 153, 0.2); }
+.badge-amber  { background: rgba(251, 191, 36, 0.1); color: var(--amber); border-color: rgba(251, 191, 36, 0.2); }
+.badge-red    { background: rgba(248, 113, 113, 0.1); color: var(--red); border-color: rgba(248, 113, 113, 0.2); }
+.badge-gray   { background: rgba(255, 255, 255, 0.03); color: var(--text2); }
+
+/* Labels */
+.label {
+  font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--text3);
+  margin-bottom: 6px; display: block;
+}
+
+/* Form elements */
+select, input, textarea {
+  background: rgba(0,0,0,0.2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text-primary);
+  font-family: var(--font-sans); font-size: 13px;
+  padding: 10px 14px; width: 100%;
+  transition: var(--transition);
+  backdrop-filter: blur(8px);
+}
+select:focus, input:focus, textarea:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-subtle);
+  background: rgba(0,0,0,0.3);
+}
+textarea { resize: vertical; min-height: 100px; }
+
+/* Divider */
+hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+/* Loading spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 18px; height: 18px; border-radius: 50%;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  animation: spin 0.8s linear infinite;
+}
+
+/* Output blocks */
+.output-box {
+  background: rgba(0,0,0,0.2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 20px;
+  font-size: 13px; line-height: 1.6; white-space: pre-wrap;
+  word-break: break-word; max-height: 400px; overflow-y: auto;
+  font-family: var(--font-mono); color: var(--text2);
+  backdrop-filter: blur(4px);
+}
+.output-box .cite { color: var(--accent); font-weight: 500; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; background: var(--bg2); backdrop-filter: blur(24px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); }
+th {
+  text-align: left; font-size: 12px; font-weight: 500;
+  color: var(--text2); padding: 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.02); text-transform: uppercase; letter-spacing: 0.05em;
+}
+td {
+  padding: 16px; font-size: 13px; color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(255,255,255,0.02); }
+
+/* Remove default focus outlines for a cleaner look */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,1508 @@
+[
+  {
+    "id": "PC-01",
+    "category": "policy_compliance",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Bristol city centre comply with the housing policies in the NPPF December 2024? Identify which specific paragraphs apply.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 11",
+      "para 120",
+      "para 124"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests core housing policy compliance",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-02",
+    "category": "policy_compliance",
+    "task": "A developer proposes removing a tree subject to a Tree Preservation Order to build 5 new homes. Under the NPPF and Bristol Local Plan, what is the policy position and what conditions would need to be met for consent?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [
+      "para 180"
+    ],
+    "difficulty": "hard",
+    "notes": "Crosses natural environment and housing policy",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-03",
+    "category": "policy_compliance",
+    "task": "What does the NPPF December 2024 say about the sequential test for retail development outside town centres? At what floor area threshold does the impact test apply?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 90",
+      "para 91",
+      "para 92"
+    ],
+    "difficulty": "medium",
+    "notes": "Town centre policy detail",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-04",
+    "category": "policy_compliance",
+    "task": "A planning application proposes a waste management facility in the green belt. Under NPPF policy, what exceptional circumstances would need to be demonstrated?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 152",
+      "para 153"
+    ],
+    "difficulty": "hard",
+    "notes": "Green belt policy \u2014 nuanced",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-05",
+    "category": "policy_compliance",
+    "task": "What is the definition of 'grey belt' land as introduced in the NPPF December 2024, and what policy tests apply to development proposals on grey belt land?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 11c",
+      "Annex 2"
+    ],
+    "difficulty": "medium",
+    "notes": "New 2024 policy concept",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-06",
+    "category": "policy_compliance",
+    "task": "A 200-bed hotel is proposed adjacent to Bristol Airport in the green belt. Assess its compliance with NPPF policy on development in the green belt and any relevant exceptions.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 147",
+      "para 149"
+    ],
+    "difficulty": "hard",
+    "notes": "Multiple policy tensions",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-07",
+    "category": "policy_compliance",
+    "task": "What affordable housing obligations does the NPPF require for residential developments? What is the policy position on viability assessments for affordable housing?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 65",
+      "para 66",
+      "para 67"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing \u2014 key dissertation topic",
+    "city": "bristol"
+  },
+  {
+    "id": "PC-08",
+    "category": "policy_compliance",
+    "task": "A householder wants to add a rear extension. Under permitted development rights and the NPPF, what are the key size and impact criteria that determine whether planning permission is required?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 230"
+    ],
+    "difficulty": "easy",
+    "notes": "Householder application basics",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-01",
+    "category": "evidence_synthesis",
+    "task": "Summarise the key changes between the NPPF 2023 and NPPF December 2024 editions, particularly regarding housing targets and the 'grey belt' concept.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Requires comparing versions \u2014 tests RAG grounding",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-02",
+    "category": "evidence_synthesis",
+    "task": "What evidence does Bristol's Local Plan provide for its housing target? How is the target calculated and what assumptions underpin it?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Evidence base synthesis",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-03",
+    "category": "evidence_synthesis",
+    "task": "Synthesise the NPPF guidance on flood risk and development. What are the flood risk zones and what types of development are permissible in each zone?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 167",
+      "para 168",
+      "para 169",
+      "Table 3"
+    ],
+    "difficulty": "medium",
+    "notes": "Technical policy \u2014 precise",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-04",
+    "category": "evidence_synthesis",
+    "task": "Compare the Bristol Local Plan's approach to tall buildings with the guidance in the NPPF on design quality. Where do the policies align and where do they differ?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Comparative synthesis",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-05",
+    "category": "evidence_synthesis",
+    "task": "What does the planning documentation say about Bristol's climate change targets? Summarise the key policies across any available documents.",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Cross-document synthesis",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-06",
+    "category": "evidence_synthesis",
+    "task": "Summarise the NPPF's approach to heritage assets. What weight must be given to harm to designated and non-designated heritage assets?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 208",
+      "para 209",
+      "para 210"
+    ],
+    "difficulty": "medium",
+    "notes": "Heritage policy",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-07",
+    "category": "evidence_synthesis",
+    "task": "What is the planning policy context for purpose-built student accommodation in Bristol? Draw on all available planning documents.",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Niche housing type",
+    "city": "bristol"
+  },
+  {
+    "id": "ES-08",
+    "category": "evidence_synthesis",
+    "task": "Explain the 'tilted balance' in NPPF planning decisions. In what circumstances does it apply and what does it mean in practice for decision-makers?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 11",
+      "para 12"
+    ],
+    "difficulty": "hard",
+    "notes": "Fundamental planning principle",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-01",
+    "category": "site_appraisal",
+    "task": "A 2-hectare brownfield site in south Bristol is proposed for 120 homes. It is within flood zone 2 and adjacent to a Grade II listed building. What are the key planning considerations and which policies apply?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Multi-constraint site appraisal",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-02",
+    "category": "site_appraisal",
+    "task": "Assess the suitability of a site in the Bristol green belt for a rural exception housing scheme. What policy tests must be passed and what types of housing would be acceptable?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 78",
+      "para 79"
+    ],
+    "difficulty": "hard",
+    "notes": "Rural exception site policy",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-03",
+    "category": "site_appraisal",
+    "task": "A site in Bristol city centre is currently vacant office space and is proposed for conversion to 30 residential units. What policy considerations apply to the change of use?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Change of use \u2014 office to residential",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-04",
+    "category": "site_appraisal",
+    "task": "What key transport and accessibility criteria must a large residential development site in Bristol satisfy under the local plan and NPPF?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 114",
+      "para 115"
+    ],
+    "difficulty": "medium",
+    "notes": "Sustainable transport policy",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-05",
+    "category": "site_appraisal",
+    "task": "A site adjacent to a protected ancient woodland is proposed for a housing development. Under the NPPF, what are the requirements and what buffer zones apply?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 180c"
+    ],
+    "difficulty": "medium",
+    "notes": "Natural environment constraints",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-06",
+    "category": "site_appraisal",
+    "task": "Evaluate the planning merits of a proposed solar farm on agricultural land in the Bristol area. What policies govern renewable energy and what weight is given to loss of agricultural land?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 161",
+      "para 174"
+    ],
+    "difficulty": "hard",
+    "notes": "Renewable energy vs food production",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-07",
+    "category": "site_appraisal",
+    "task": "A former NHS hospital site in Bristol is being considered for redevelopment as a mixed-use scheme including housing, offices, and community facilities. What sequential and impact tests apply?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Complex mixed-use regeneration",
+    "city": "bristol"
+  },
+  {
+    "id": "SA-08",
+    "category": "site_appraisal",
+    "task": "What are the minimum space standards for new residential development in Bristol? Do they differ from the nationally described space standard and how are they applied?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Design standards detail",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-01",
+    "category": "stakeholder_communication",
+    "task": "Write a plain English explanation for a community group of what the 'presumption in favour of sustainable development' means and how it affects planning decisions in their area.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 11"
+    ],
+    "difficulty": "easy",
+    "notes": "Core concept \u2014 plain English",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-02",
+    "category": "stakeholder_communication",
+    "task": "A resident wants to object to a large housing development near their home. Draft a brief guide explaining the five strongest planning grounds for objection based on NPPF policy.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Practical guidance for residents",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-03",
+    "category": "stakeholder_communication",
+    "task": "Explain to a non-planning audience what the difference is between 'designated' and 'non-designated' heritage assets, and what protection each receives under the NPPF.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 206",
+      "para 207",
+      "para 208"
+    ],
+    "difficulty": "easy",
+    "notes": "Heritage communication",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-04",
+    "category": "stakeholder_communication",
+    "task": "A small developer asks for a plain English summary of what affordable housing contributions they may be required to make for a 15-unit scheme in Bristol. Explain the policy position.",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Developer guidance",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-05",
+    "category": "stakeholder_communication",
+    "task": "Write a brief FAQ for members of the public explaining the Bristol Local Plan: what it is, why it matters, and how they can get involved in planning decisions.",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "easy",
+    "notes": "Stakeholder engagement \u2014 public",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-06",
+    "category": "stakeholder_communication",
+    "task": "Explain to a community group in plain language what a 'material consideration' is in planning, and give three examples relevant to a housing application near their neighbourhood.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "easy",
+    "notes": "Basic planning concept",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-07",
+    "category": "stakeholder_communication",
+    "task": "A local councillor asks for a briefing note on what the new NPPF December 2024 means for housing delivery in their ward. Summarise the key changes in accessible language.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "medium",
+    "notes": "Briefing note for non-specialist",
+    "city": "bristol"
+  },
+  {
+    "id": "SC-08",
+    "category": "stakeholder_communication",
+    "task": "Draft a response to a resident concerned about the loss of green space to a proposed housing development, explaining what policies protect green spaces and what material weight these carry.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 102",
+      "para 103"
+    ],
+    "difficulty": "medium",
+    "notes": "Green space policy communication",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-01",
+    "category": "strategic_analysis",
+    "task": "Critically analyse how the NPPF December 2024 balances housing delivery against environmental protection. Where does the policy framework create tensions and how should decision-makers navigate them?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "High-level critical analysis",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-02",
+    "category": "strategic_analysis",
+    "task": "How has the policy approach to green belt changed between the 2012 NPPF and the December 2024 version? What are the implications for LPAs with significant green belt land?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Policy evolution \u2014 requires baseline knowledge",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-03",
+    "category": "strategic_analysis",
+    "task": "Evaluate the effectiveness of the 'viability' test in the NPPF as a mechanism for delivering affordable housing. What are its strengths and weaknesses from a policy delivery perspective?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 57",
+      "para 58"
+    ],
+    "difficulty": "hard",
+    "notes": "Critical policy analysis",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-04",
+    "category": "strategic_analysis",
+    "task": "What strategic role does Bristol's Local Plan assign to mixed-use development in the city centre? How does this align with the NPPF's approach to town centres and economic growth?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Strategic alignment",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-05",
+    "category": "strategic_analysis",
+    "task": "Analyse the policy framework for achieving net zero carbon in new development. What do the NPPF and Bristol Local Plan require, and how ambitious is the policy compared to government targets?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Climate policy analysis",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-06",
+    "category": "strategic_analysis",
+    "task": "How does the concept of 'beauty' and design quality feature in the NPPF December 2024? What does this mean for LPAs determining planning applications?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 130",
+      "para 131",
+      "para 132"
+    ],
+    "difficulty": "medium",
+    "notes": "Design policy \u2014 subjective concept",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-07",
+    "category": "strategic_analysis",
+    "task": "Assess Bristol's strategic housing land supply position. What mechanisms does the Local Plan provide for boosting supply if the five-year housing land supply is not maintained?",
+    "expected_source": "Bristol_Local_Plan.pdf",
+    "expected_paragraphs": [],
+    "difficulty": "hard",
+    "notes": "Housing land supply strategy",
+    "city": "bristol"
+  },
+  {
+    "id": "ST-08",
+    "category": "strategic_analysis",
+    "task": "The NPPF refers to 'well-designed places' as a core planning objective. How is this concept operationalised through planning policy, and what evidence would a decision-maker need to assess design quality?",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "para 125",
+      "para 126",
+      "para 127"
+    ],
+    "difficulty": "hard",
+    "notes": "Design quality operationalisation",
+    "city": "bristol"
+  },
+  {
+    "id": "BIR-PC-01",
+    "category": "policy_compliance",
+    "city": "birmingham",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Birmingham city centre comply with the housing policies of the Birmingham Development Plan 2031 and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy PG1",
+      "Policy TP27",
+      "Policy TP30",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "BIR-PC-02",
+    "category": "policy_compliance",
+    "city": "birmingham",
+    "task": "A developer proposes a major residential scheme in Birmingham with no affordable housing contribution, citing viability. What does the Birmingham Development Plan 2031 require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy TP31"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "BIR-ES-01",
+    "category": "evidence_synthesis",
+    "city": "birmingham",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Birmingham Development Plan 2031, citing the key strategic policies (Policy PG1, Policy TP27, Policy TP30 where relevant).",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy PG1",
+      "Policy TP27",
+      "Policy TP30"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "BIR-ES-02",
+    "category": "evidence_synthesis",
+    "city": "birmingham",
+    "task": "Compare the climate change and sustainable design requirements of the Birmingham Development Plan 2031 (e.g. Policy TP1) with the NPPF December 2024. Where does the local plan, adopted in 2017, fall short of or differ from current national policy?",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy TP1"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "BIR-SA-01",
+    "category": "site_appraisal",
+    "city": "birmingham",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Digbeth, Birmingham, for a residential-led mixed-use development. Identify the relevant policies from the Birmingham Development Plan 2031 and any likely constraints.",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy PG1",
+      "Policy TP27",
+      "Policy TP30",
+      "Policy PG3"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Digbeth)"
+  },
+  {
+    "id": "BIR-SC-01",
+    "category": "stakeholder_communication",
+    "city": "birmingham",
+    "task": "Write a plain-English summary for local residents explaining what Policy PG3 of the Birmingham Development Plan 2031 means for the design of new development in their neighbourhood.",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy PG3"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "BIR-ST-01",
+    "category": "strategic_analysis",
+    "city": "birmingham",
+    "task": "The Birmingham Development Plan 2031 was adopted in 2017, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "BIR-ST-02",
+    "category": "strategic_analysis",
+    "city": "birmingham",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Birmingham, and which local plan policy sets this? Answer for Birmingham specifically.",
+    "expected_source": "Birmingham_Development_Plan_2031.pdf",
+    "expected_paragraphs": [
+      "Policy TP31"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "LEE-PC-01",
+    "category": "policy_compliance",
+    "city": "leeds",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Leeds city centre comply with the housing policies of the Leeds Core Strategy (as amended 2019) and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Spatial Policy 6",
+      "Policy H1",
+      "Policy H5",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "LEE-PC-02",
+    "category": "policy_compliance",
+    "city": "leeds",
+    "task": "A developer proposes a major residential scheme in Leeds with no affordable housing contribution, citing viability. What does the Leeds Core Strategy (as amended 2019) require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Policy H5"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "LEE-ES-01",
+    "category": "evidence_synthesis",
+    "city": "leeds",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Leeds Core Strategy (as amended 2019), citing the key strategic policies (Spatial Policy 6, Policy H1, Policy H5 where relevant).",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Spatial Policy 6",
+      "Policy H1",
+      "Policy H5"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "LEE-ES-02",
+    "category": "evidence_synthesis",
+    "city": "leeds",
+    "task": "Compare the climate change and sustainable design requirements of the Leeds Core Strategy (as amended 2019) (e.g. Policy EN1) with the NPPF December 2024. Where does the local plan, adopted in 2019, fall short of or differ from current national policy?",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Policy EN1"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "LEE-SA-01",
+    "category": "site_appraisal",
+    "city": "leeds",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Holbeck, Leeds, for a residential-led mixed-use development. Identify the relevant policies from the Leeds Core Strategy (as amended 2019) and any likely constraints.",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Spatial Policy 6",
+      "Policy H1",
+      "Policy H5",
+      "Policy P10"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Holbeck)"
+  },
+  {
+    "id": "LEE-SC-01",
+    "category": "stakeholder_communication",
+    "city": "leeds",
+    "task": "Write a plain-English summary for local residents explaining what Policy P10 of the Leeds Core Strategy (as amended 2019) means for the design of new development in their neighbourhood.",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Policy P10"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "LEE-ST-01",
+    "category": "strategic_analysis",
+    "city": "leeds",
+    "task": "The Leeds Core Strategy (as amended 2019) was adopted in 2019, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "LEE-ST-02",
+    "category": "strategic_analysis",
+    "city": "leeds",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Leeds, and which local plan policy sets this? Answer for Leeds specifically.",
+    "expected_source": "Leeds_Core_Strategy_2019_consolidated.pdf",
+    "expected_paragraphs": [
+      "Policy H5"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "LIV-PC-01",
+    "category": "policy_compliance",
+    "city": "liverpool",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Liverpool city centre comply with the housing policies of the Liverpool Local Plan 2013-2033 and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H12",
+      "Policy H14",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "LIV-PC-02",
+    "category": "policy_compliance",
+    "city": "liverpool",
+    "task": "A developer proposes a major residential scheme in Liverpool with no affordable housing contribution, citing viability. What does the Liverpool Local Plan 2013-2033 require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy H12"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "LIV-ES-01",
+    "category": "evidence_synthesis",
+    "city": "liverpool",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Liverpool Local Plan 2013-2033, citing the key strategic policies (Policy H1, Policy H12, Policy H14 where relevant).",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H12",
+      "Policy H14"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "LIV-ES-02",
+    "category": "evidence_synthesis",
+    "city": "liverpool",
+    "task": "Compare the climate change and sustainable design requirements of the Liverpool Local Plan 2013-2033 (e.g. Policy STP3) with the NPPF December 2024. Where does the local plan, adopted in 2022, fall short of or differ from current national policy?",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy STP3"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "LIV-SA-01",
+    "category": "site_appraisal",
+    "city": "liverpool",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in the Baltic Triangle, Liverpool, for a residential-led mixed-use development. Identify the relevant policies from the Liverpool Local Plan 2013-2033 and any likely constraints.",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H12",
+      "Policy H14",
+      "Policy UD1"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (the Baltic Triangle)"
+  },
+  {
+    "id": "LIV-SC-01",
+    "category": "stakeholder_communication",
+    "city": "liverpool",
+    "task": "Write a plain-English summary for local residents explaining what Policy UD1 of the Liverpool Local Plan 2013-2033 means for the design of new development in their neighbourhood.",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy UD1"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "LIV-ST-01",
+    "category": "strategic_analysis",
+    "city": "liverpool",
+    "task": "The Liverpool Local Plan 2013-2033 was adopted in 2022, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "LIV-ST-02",
+    "category": "strategic_analysis",
+    "city": "liverpool",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Liverpool, and which local plan policy sets this? Answer for Liverpool specifically.",
+    "expected_source": "Liverpool_Local_Plan_2013-2033.pdf",
+    "expected_paragraphs": [
+      "Policy H12"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "SHE-PC-01",
+    "category": "policy_compliance",
+    "city": "sheffield",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Sheffield city centre comply with the housing policies of the Sheffield Core Strategy and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS22",
+      "Policy CS23",
+      "Policy CS24",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "SHE-PC-02",
+    "category": "policy_compliance",
+    "city": "sheffield",
+    "task": "A developer proposes a major residential scheme in Sheffield with no affordable housing contribution, citing viability. What does the Sheffield Core Strategy require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS40"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "SHE-ES-01",
+    "category": "evidence_synthesis",
+    "city": "sheffield",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Sheffield Core Strategy, citing the key strategic policies (Policy CS22, Policy CS23, Policy CS24 where relevant).",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS22",
+      "Policy CS23",
+      "Policy CS24"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "SHE-ES-02",
+    "category": "evidence_synthesis",
+    "city": "sheffield",
+    "task": "Compare the climate change and sustainable design requirements of the Sheffield Core Strategy (e.g. Policy CS64) with the NPPF December 2024. Where does the local plan, adopted in 2009, fall short of or differ from current national policy?",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS64"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "SHE-SA-01",
+    "category": "site_appraisal",
+    "city": "sheffield",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Attercliffe, Sheffield, for a residential-led mixed-use development. Identify the relevant policies from the Sheffield Core Strategy and any likely constraints.",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS22",
+      "Policy CS23",
+      "Policy CS24",
+      "Policy CS74"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Attercliffe)"
+  },
+  {
+    "id": "SHE-SC-01",
+    "category": "stakeholder_communication",
+    "city": "sheffield",
+    "task": "Write a plain-English summary for local residents explaining what Policy CS74 of the Sheffield Core Strategy means for the design of new development in their neighbourhood.",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS74"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "SHE-ST-01",
+    "category": "strategic_analysis",
+    "city": "sheffield",
+    "task": "The Sheffield Core Strategy was adopted in 2009, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "SHE-ST-02",
+    "category": "strategic_analysis",
+    "city": "sheffield",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Sheffield, and which local plan policy sets this? Answer for Sheffield specifically.",
+    "expected_source": "Sheffield_Core_Strategy_2009.pdf",
+    "expected_paragraphs": [
+      "Policy CS40"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "NEW-PC-01",
+    "category": "policy_compliance",
+    "city": "newcastle",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Newcastle city centre comply with the housing policies of the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS10",
+      "Policy CS11",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "NEW-PC-02",
+    "category": "policy_compliance",
+    "city": "newcastle",
+    "task": "A developer proposes a major residential scheme in Newcastle with no affordable housing contribution, citing viability. What does the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS11"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "NEW-ES-01",
+    "category": "evidence_synthesis",
+    "city": "newcastle",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030, citing the key strategic policies (Policy CS10, Policy CS11 where relevant).",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS10",
+      "Policy CS11"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "NEW-ES-02",
+    "category": "evidence_synthesis",
+    "city": "newcastle",
+    "task": "Compare the climate change and sustainable design requirements of the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 (e.g. Policy CS16) with the NPPF December 2024. Where does the local plan, adopted in 2015, fall short of or differ from current national policy?",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS16"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "NEW-SA-01",
+    "category": "site_appraisal",
+    "city": "newcastle",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Ouseburn, Newcastle, for a residential-led mixed-use development. Identify the relevant policies from the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 and any likely constraints.",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS10",
+      "Policy CS11",
+      "Policy UC12"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Ouseburn)"
+  },
+  {
+    "id": "NEW-SC-01",
+    "category": "stakeholder_communication",
+    "city": "newcastle",
+    "task": "Write a plain-English summary for local residents explaining what Policy UC12 of the Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 means for the design of new development in their neighbourhood.",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy UC12"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "NEW-ST-01",
+    "category": "strategic_analysis",
+    "city": "newcastle",
+    "task": "The Core Strategy and Urban Core Plan for Gateshead and Newcastle 2010-2030 was adopted in 2015, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "NEW-ST-02",
+    "category": "strategic_analysis",
+    "city": "newcastle",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Newcastle, and which local plan policy sets this? Answer for Newcastle specifically.",
+    "expected_source": "Newcastle_Gateshead_CSUCP_2010-2030.pdf",
+    "expected_paragraphs": [
+      "Policy CS11"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "NOT-PC-01",
+    "category": "policy_compliance",
+    "city": "nottingham",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Nottingham city centre comply with the housing policies of the Nottingham Land and Planning Policies Document (Local Plan Part 2) and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy HO1",
+      "Policy HO3",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "NOT-PC-02",
+    "category": "policy_compliance",
+    "city": "nottingham",
+    "task": "A developer proposes a major residential scheme in Nottingham with no affordable housing contribution, citing viability. What does the Nottingham Land and Planning Policies Document (Local Plan Part 2) require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy HO3"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "NOT-ES-01",
+    "category": "evidence_synthesis",
+    "city": "nottingham",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Nottingham Land and Planning Policies Document (Local Plan Part 2), citing the key strategic policies (Policy HO1, Policy HO3 where relevant).",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy HO1",
+      "Policy HO3"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "NOT-ES-02",
+    "category": "evidence_synthesis",
+    "city": "nottingham",
+    "task": "Compare the climate change and sustainable design requirements of the Nottingham Land and Planning Policies Document (Local Plan Part 2) (e.g. Policy CC1) with the NPPF December 2024. Where does the local plan, adopted in 2020, fall short of or differ from current national policy?",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy CC1"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "NOT-SA-01",
+    "category": "site_appraisal",
+    "city": "nottingham",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Sneinton, Nottingham, for a residential-led mixed-use development. Identify the relevant policies from the Nottingham Land and Planning Policies Document (Local Plan Part 2) and any likely constraints.",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy HO1",
+      "Policy HO3",
+      "Policy DE1"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Sneinton)"
+  },
+  {
+    "id": "NOT-SC-01",
+    "category": "stakeholder_communication",
+    "city": "nottingham",
+    "task": "Write a plain-English summary for local residents explaining what Policy DE1 of the Nottingham Land and Planning Policies Document (Local Plan Part 2) means for the design of new development in their neighbourhood.",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy DE1"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "NOT-ST-01",
+    "category": "strategic_analysis",
+    "city": "nottingham",
+    "task": "The Nottingham Land and Planning Policies Document (Local Plan Part 2) was adopted in 2020, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "NOT-ST-02",
+    "category": "strategic_analysis",
+    "city": "nottingham",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Nottingham, and which local plan policy sets this? Answer for Nottingham specifically.",
+    "expected_source": "Nottingham_LAPP_2020.pdf",
+    "expected_paragraphs": [
+      "Policy HO3"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "LEI-PC-01",
+    "category": "policy_compliance",
+    "city": "leicester",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Leicester city centre comply with the housing policies of the Leicester Local Plan 2020-2036 and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "Policy SL01",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "LEI-PC-02",
+    "category": "policy_compliance",
+    "city": "leicester",
+    "task": "A developer proposes a major residential scheme in Leicester with no affordable housing contribution, citing viability. What does the Leicester Local Plan 2020-2036 require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "affordable housing policy (code to verify)"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "LEI-ES-01",
+    "category": "evidence_synthesis",
+    "city": "leicester",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Leicester Local Plan 2020-2036, citing the key strategic policies (Policy SL01 where relevant).",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "Policy SL01"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "LEI-ES-02",
+    "category": "evidence_synthesis",
+    "city": "leicester",
+    "task": "Compare the climate change and sustainable design requirements of the Leicester Local Plan 2020-2036 (e.g. Policy CCFR01) with the NPPF December 2024. Where does the local plan, adopted in 2026, fall short of or differ from current national policy?",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "Policy CCFR01"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "LEI-SA-01",
+    "category": "site_appraisal",
+    "city": "leicester",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in the Waterside, Leicester, for a residential-led mixed-use development. Identify the relevant policies from the Leicester Local Plan 2020-2036 and any likely constraints.",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "Policy SL01",
+      "Policy DQP01"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (the Waterside)"
+  },
+  {
+    "id": "LEI-SC-01",
+    "category": "stakeholder_communication",
+    "city": "leicester",
+    "task": "Write a plain-English summary for local residents explaining what Policy DQP01 of the Leicester Local Plan 2020-2036 means for the design of new development in their neighbourhood.",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "Policy DQP01"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "LEI-ST-01",
+    "category": "strategic_analysis",
+    "city": "leicester",
+    "task": "The Leicester Local Plan 2020-2036 was adopted in 2026, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "LEI-ST-02",
+    "category": "strategic_analysis",
+    "city": "leicester",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Leicester, and which local plan policy sets this? Answer for Leicester specifically.",
+    "expected_source": "Leicester_Local_Plan_2020-2036_Adopted_2026.pdf",
+    "expected_paragraphs": [
+      "affordable housing policy (code to verify)"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "SOU-PC-01",
+    "category": "policy_compliance",
+    "city": "southampton",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Southampton city centre comply with the housing policies of the Southampton Core Strategy (amended 2015) and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS4",
+      "Policy CS5",
+      "Policy CS16",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "SOU-PC-02",
+    "category": "policy_compliance",
+    "city": "southampton",
+    "task": "A developer proposes a major residential scheme in Southampton with no affordable housing contribution, citing viability. What does the Southampton Core Strategy (amended 2015) require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS15"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "SOU-ES-01",
+    "category": "evidence_synthesis",
+    "city": "southampton",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Southampton Core Strategy (amended 2015), citing the key strategic policies (Policy CS4, Policy CS5, Policy CS16 where relevant).",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS4",
+      "Policy CS5",
+      "Policy CS16"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "SOU-ES-02",
+    "category": "evidence_synthesis",
+    "city": "southampton",
+    "task": "Compare the climate change and sustainable design requirements of the Southampton Core Strategy (amended 2015) (e.g. Policy CS20) with the NPPF December 2024. Where does the local plan, adopted in 2015, fall short of or differ from current national policy?",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS20"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "SOU-SA-01",
+    "category": "site_appraisal",
+    "city": "southampton",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Woolston, Southampton, for a residential-led mixed-use development. Identify the relevant policies from the Southampton Core Strategy (amended 2015) and any likely constraints.",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS4",
+      "Policy CS5",
+      "Policy CS16",
+      "Policy CS13"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Woolston)"
+  },
+  {
+    "id": "SOU-SC-01",
+    "category": "stakeholder_communication",
+    "city": "southampton",
+    "task": "Write a plain-English summary for local residents explaining what Policy CS13 of the Southampton Core Strategy (amended 2015) means for the design of new development in their neighbourhood.",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS13"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "SOU-ST-01",
+    "category": "strategic_analysis",
+    "city": "southampton",
+    "task": "The Southampton Core Strategy (amended 2015) was adopted in 2015, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "SOU-ST-02",
+    "category": "strategic_analysis",
+    "city": "southampton",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Southampton, and which local plan policy sets this? Answer for Southampton specifically.",
+    "expected_source": "Southampton_Core_Strategy_2015_amended.pdf",
+    "expected_paragraphs": [
+      "Policy CS15"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "PLY-PC-01",
+    "category": "policy_compliance",
+    "city": "plymouth",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in Plymouth city centre comply with the housing policies of the Plymouth and South West Devon Joint Local Plan and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy SPT3",
+      "Policy DEV7",
+      "Policy DEV10",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "PLY-PC-02",
+    "category": "policy_compliance",
+    "city": "plymouth",
+    "task": "A developer proposes a major residential scheme in Plymouth with no affordable housing contribution, citing viability. What does the Plymouth and South West Devon Joint Local Plan require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy DEV7"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "PLY-ES-01",
+    "category": "evidence_synthesis",
+    "city": "plymouth",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the Plymouth and South West Devon Joint Local Plan, citing the key strategic policies (Policy SPT3, Policy DEV7, Policy DEV10 where relevant).",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy SPT3",
+      "Policy DEV7",
+      "Policy DEV10"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "PLY-ES-02",
+    "category": "evidence_synthesis",
+    "city": "plymouth",
+    "task": "Compare the climate change and sustainable design requirements of the Plymouth and South West Devon Joint Local Plan (e.g. Policy DEV32) with the NPPF December 2024. Where does the local plan, adopted in 2019, fall short of or differ from current national policy?",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy DEV32"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "PLY-SA-01",
+    "category": "site_appraisal",
+    "city": "plymouth",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in Millbay, Plymouth, for a residential-led mixed-use development. Identify the relevant policies from the Plymouth and South West Devon Joint Local Plan and any likely constraints.",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy SPT3",
+      "Policy DEV7",
+      "Policy DEV10",
+      "Policy DEV20"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (Millbay)"
+  },
+  {
+    "id": "PLY-SC-01",
+    "category": "stakeholder_communication",
+    "city": "plymouth",
+    "task": "Write a plain-English summary for local residents explaining what Policy DEV20 of the Plymouth and South West Devon Joint Local Plan means for the design of new development in their neighbourhood.",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy DEV20"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "PLY-ST-01",
+    "category": "strategic_analysis",
+    "city": "plymouth",
+    "task": "The Plymouth and South West Devon Joint Local Plan was adopted in 2019, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "PLY-ST-02",
+    "category": "strategic_analysis",
+    "city": "plymouth",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in Plymouth, and which local plan policy sets this? Answer for Plymouth specifically.",
+    "expected_source": "Plymouth_SWDevon_Joint_Local_Plan_2019.pdf",
+    "expected_paragraphs": [
+      "Policy DEV7"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  },
+  {
+    "id": "LON-PC-01",
+    "category": "policy_compliance",
+    "city": "london",
+    "task": "Does a proposed 80-unit residential development on a brownfield site in London city centre comply with the housing policies of the London Plan 2021 and the NPPF December 2024? Identify which specific policies and paragraphs apply.",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H4",
+      "Policy H10",
+      "NPPF para 11",
+      "NPPF para 120"
+    ],
+    "difficulty": "medium",
+    "notes": "City variant of Bristol PC-01; policy codes extracted from plan text, researcher-verified"
+  },
+  {
+    "id": "LON-PC-02",
+    "category": "policy_compliance",
+    "city": "london",
+    "task": "A developer proposes a major residential scheme in London with no affordable housing contribution, citing viability. What does the London Plan 2021 require for affordable housing, and under what circumstances can the requirement be reduced? Cite the specific policy.",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy H4"
+    ],
+    "difficulty": "medium",
+    "notes": "Affordable housing thresholds differ by city \u2014 probes spatial misattribution"
+  },
+  {
+    "id": "LON-ES-01",
+    "category": "evidence_synthesis",
+    "city": "london",
+    "task": "Summarise the overall spatial strategy and housing requirement set out in the London Plan 2021, citing the key strategic policies (Policy H1, Policy H4, Policy H10 where relevant).",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H4",
+      "Policy H10"
+    ],
+    "difficulty": "medium",
+    "notes": "Tests evidence synthesis from the city's own plan"
+  },
+  {
+    "id": "LON-ES-02",
+    "category": "evidence_synthesis",
+    "city": "london",
+    "task": "Compare the climate change and sustainable design requirements of the London Plan 2021 (e.g. Policy SI2) with the NPPF December 2024. Where does the local plan, adopted in 2021, fall short of or differ from current national policy?",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy SI2"
+    ],
+    "difficulty": "hard",
+    "notes": "Cross-document synthesis; also probes temporal drift for older plans"
+  },
+  {
+    "id": "LON-SA-01",
+    "category": "site_appraisal",
+    "city": "london",
+    "task": "Assess the suitability of a hypothetical 2-hectare former industrial site in the Isle of Dogs, London, for a residential-led mixed-use development. Identify the relevant policies from the London Plan 2021 and any likely constraints.",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy H1",
+      "Policy H4",
+      "Policy H10",
+      "Policy D4"
+    ],
+    "difficulty": "hard",
+    "notes": "Site appraisal anchored to a real district (the Isle of Dogs)"
+  },
+  {
+    "id": "LON-SC-01",
+    "category": "stakeholder_communication",
+    "city": "london",
+    "task": "Write a plain-English summary for local residents explaining what Policy D4 of the London Plan 2021 means for the design of new development in their neighbourhood.",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy D4"
+    ],
+    "difficulty": "easy",
+    "notes": "Plain-English translation of a specific design policy"
+  },
+  {
+    "id": "LON-ST-01",
+    "category": "strategic_analysis",
+    "city": "london",
+    "task": "The London Plan 2021 was adopted in 2021, before the NPPF December 2024 revision. Identify the policy areas where the December 2024 changes (grey belt, mandatory housing targets, affordable housing amendments) supersede or create tension with the adopted plan.",
+    "expected_source": "NPPF_December_2024.pdf",
+    "expected_paragraphs": [
+      "NPPF Annex 1"
+    ],
+    "difficulty": "hard",
+    "notes": "Temporal policy drift, parameterised by plan age"
+  },
+  {
+    "id": "LON-ST-02",
+    "category": "strategic_analysis",
+    "city": "london",
+    "task": "What affordable housing percentage and site-size threshold applies to major residential developments in London, and which local plan policy sets this? Answer for London specifically.",
+    "expected_source": "London_Plan_2021.pdf",
+    "expected_paragraphs": [
+      "Policy H4"
+    ],
+    "difficulty": "medium",
+    "notes": "Deliberate misattribution probe: thresholds differ across the 11 cities in the corpus"
+  }
+]

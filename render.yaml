@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: planning-rag-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+    disk:
+      name: chromadb-data
+      mountPath: /opt/render/project/src/chroma_db
+      sizeGB: 1
