@@ -46,7 +46,7 @@ function Nav() {
       {/* Logo */}
       <div style={{ marginRight: '32px', display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img 
-          src="/logo.png" 
+          src="/logo.jpg"
           alt="University of Bristol" 
           style={{ 
             width: '28px', 

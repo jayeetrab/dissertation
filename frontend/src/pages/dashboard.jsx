@@ -65,6 +65,7 @@ export default function Dashboard() {
 
   const vsStatus = health?.vectorstore
   const vsReady  = vsStatus?.ready
+  const hasResults = (stats?.tasks_run || 0) > 0
 
   return (
     <motion.div 
@@ -88,18 +89,22 @@ export default function Dashboard() {
         className="card" 
         style={{ 
           marginBottom: '32px', display: 'flex', alignItems: 'center', gap: '20px', padding: '20px 24px',
-          borderLeft: vsReady ? '3px solid var(--green)' : '3px solid var(--red)',
-          boxShadow: vsReady ? 'inset 2px 0 20px -10px rgba(52, 211, 153, 0.2), var(--shadow)' : 'inset 2px 0 20px -10px rgba(248, 113, 113, 0.2), var(--shadow)'
+          borderLeft: `3px solid ${vsReady ? 'var(--green)' : hasResults ? 'var(--amber)' : 'var(--red)'}`,
+          boxShadow: vsReady ? 'inset 2px 0 20px -10px rgba(52, 211, 153, 0.2), var(--shadow)' : 'var(--shadow)'
         }}
       >
         <div>
           <div style={{ fontSize: '14px', fontWeight: '500', color: 'var(--text-primary)' }}>
-            Vector Store: {vsReady ? `Ready — ${vsStatus.chunk_count} chunks` : 'Not Ready'}
+            {vsReady ? `Vector Store: Ready — ${vsStatus.chunk_count} chunks`
+              : hasResults ? `Stored results loaded — ${stats?.tasks_run} tasks`
+              : 'Vector Store: Not Ready'}
           </div>
           <div style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px' }}>
             {vsReady
-              ? 'Documents successfully ingested. The system is ready to run experiments.'
-              : 'Please run `python ingest.py` in your terminal to load your planning documents.'}
+              ? 'Documents ingested. The system is ready to run experiments.'
+              : hasResults
+              ? 'Showing the completed experiment results. Live retrieval (Run and Compare) needs the vector store, which is not loaded on this deployment.'
+              : 'The vector store is empty. Run ingest.py to load the planning documents.'}
           </div>
         </div>
         <div style={{ marginLeft: 'auto', textAlign: 'right' }}>
@@ -207,10 +212,10 @@ export default function Dashboard() {
           <h2 style={{ marginBottom: '16px', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-secondary)' }}>Experiment Workflow</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
-              { step: '1', title: 'Ingest Documents', desc: 'Run `python ingest.py` to load PDFs into ChromaDB', done: vsReady },
+              { step: '1', title: 'Ingest Documents', desc: 'Planning PDFs loaded into ChromaDB', done: vsReady || hasResults },
               { step: '2', title: 'Run Experiment',   desc: 'Execute tasks through baseline and RAG systems', done: (stats?.tasks_run || 0) > 0 },
               { step: '3', title: 'Evaluate',         desc: 'Score outputs on accuracy and hallucination', done: (stats?.tasks_scored || 0) > 0 },
-              { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: false },
+              { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: (stats?.tasks_run || 0) > 0 },
             ].map((s, index) => (
               <motion.div 
                 key={s.step}
@@ -221,10 +226,10 @@ export default function Dashboard() {
                   display: 'flex', alignItems: 'center', gap: '16px',
                   padding: '12px 16px', background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)',
                   opacity: (index > 0 && !s.done && !([
-              { step: '1', title: 'Ingest Documents', desc: 'Run `python ingest.py` to load PDFs into ChromaDB', done: vsReady },
+              { step: '1', title: 'Ingest Documents', desc: 'Planning PDFs loaded into ChromaDB', done: vsReady || hasResults },
               { step: '2', title: 'Run Experiment',   desc: 'Execute tasks through baseline and RAG systems', done: (stats?.tasks_run || 0) > 0 },
               { step: '3', title: 'Evaluate',         desc: 'Manually score outputs on accuracy and hallucination', done: (stats?.tasks_scored || 0) > 0 },
-              { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: false },
+              { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: (stats?.tasks_run || 0) > 0 },
             ][index - 1].done)) ? 0.3 : 1
                 }}
               >

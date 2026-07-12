@@ -25,3 +25,4 @@ results/results_2026*.json
 # OS / misc
 .DS_Store
 all_code.txt
+chroma_db.zip
