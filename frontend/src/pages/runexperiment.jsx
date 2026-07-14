@@ -143,6 +143,7 @@ export default function RunExperiment() {
   const [runningAll, setRunningAll] = useState(false)
   const [progress, setProgress] = useState(null)
   const [toast, setToast]       = useState(null)
+  const [vsReady, setVsReady]   = useState(true)
 
   useEffect(() => {
     fetch(`${API}/tasks`).then(r => r.json()).then(setTasks)
@@ -151,6 +152,7 @@ export default function RunExperiment() {
       data.forEach(r => { map[r.task_id] = r })
       setResults(map)
     })
+    fetch(`${API}/health`).then(r => r.json()).then(h => setVsReady(!!h?.vectorstore?.ready)).catch(() => {})
   }, [])
 
   const showToast = (msg) => {
@@ -242,13 +244,25 @@ export default function RunExperiment() {
             whileTap={{ scale: 0.98 }}
             className="btn btn-primary"
             onClick={runAll}
-            disabled={runningAll || running !== null}
+            disabled={runningAll || running !== null || !vsReady}
             style={{ padding: '12px 24px' }}
           >
             {runningAll ? <><div className="spinner" /> Running...</> : <><PlayCircle size={18} /> Run All Tasks</>}
           </motion.button>
         </div>
       </div>
+
+      {/* Vector-store-unavailable notice (e.g. on the hosted demo) */}
+      {!vsReady && (
+        <div className="card" style={{
+          marginBottom: '24px', padding: '14px 20px',
+          borderLeft: '3px solid var(--amber)', display: 'flex', alignItems: 'center', gap: '10px',
+          fontSize: '13px', color: 'var(--text-secondary)'
+        }}>
+          <AlertCircle size={16} style={{ color: 'var(--amber)', flexShrink: 0 }} />
+          Live retrieval is unavailable on this deployment (the vector store is not loaded), so new runs are disabled. The stored outputs below are read-only.
+        </div>
+      )}
 
       {/* Task list */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -294,7 +308,7 @@ export default function RunExperiment() {
                 <button
                   className={`btn ${hasResult ? 'btn-secondary' : 'btn-primary'}`}
                   onClick={() => runTask(task.id)}
-                  disabled={isRunning || runningAll}
+                  disabled={isRunning || runningAll || !vsReady}
                   style={{ flexShrink: 0, minWidth: '120px' }}
                 >
                   {isRunning

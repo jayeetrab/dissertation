@@ -94,10 +94,12 @@ export default function Results() {
   const [validation, setValidation] = useState(null)
   const [modelCmp, setModelCmp] = useState(null)
   const [toast, setToast] = useState(null)
+  const [vsReady, setVsReady] = useState(true)
 
   useEffect(() => {
     fetch(`${API}/validation`).then(r => r.json()).then(setValidation).catch(() => {})
     fetch(`${API}/model-comparison`).then(r => r.json()).then(setModelCmp).catch(() => {})
+    fetch(`${API}/health`).then(r => r.json()).then(h => setVsReady(!!h?.vectorstore?.ready)).catch(() => {})
   }, [])
 
   const showToast = (msg) => {
@@ -269,7 +271,8 @@ export default function Results() {
           </p>
         </div>
         <div style={{ marginLeft: 'auto', display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="btn btn-secondary" onClick={handleRagas} disabled={runningRagas}>
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="btn btn-secondary" onClick={handleRagas} disabled={runningRagas || !vsReady}
+            title={!vsReady ? 'Live retrieval is unavailable on this deployment; RAGAS scores below are precomputed.' : undefined}>
             {runningRagas ? <><div className="spinner" style={{ width: '16px', height: '16px' }} /> Running RAGAS…</> : <><Zap size={16} /> Run RAGAS</>}
           </motion.button>
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="btn btn-secondary" onClick={handleExportJSON}>

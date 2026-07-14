@@ -190,6 +190,7 @@ export default function Compare() {
   const [running, setRunning] = useState({})   // keyed by subset.id → bool
   const [runningAll, setRunningAll] = useState(false)
   const [toast, setToast] = useState(null)
+  const [vsReady, setVsReady] = useState(true)
 
   const showToast = (msg) => {
     setToast(msg)
@@ -206,6 +207,7 @@ export default function Compare() {
         setTasks(data)
         if (data.length > 0) setSelectedTask(data[0])
       })
+    fetch(`${API}/health`).then(r => r.json()).then(h => setVsReady(!!h?.vectorstore?.ready)).catch(() => {})
   }, [])
 
   // When task changes, clear previous comparison results
@@ -285,6 +287,17 @@ export default function Compare() {
           </select>
         </div>
       </div>
+
+      {!vsReady && (
+        <div className="card" style={{
+          marginBottom: '24px', padding: '14px 20px',
+          borderLeft: '3px solid var(--amber)', display: 'flex', alignItems: 'center', gap: '10px',
+          fontSize: '13px', color: 'var(--text-secondary)'
+        }}>
+          <AlertCircle size={16} style={{ color: 'var(--amber)', flexShrink: 0 }} />
+          Source ablation runs live retrieval, which is unavailable on this deployment (the vector store is not loaded). This page is interactive when run locally after ingesting the corpus.
+        </div>
+      )}
 
       <div style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '24px' }}>
         {/* Left: task picker */}
@@ -389,7 +402,7 @@ export default function Compare() {
                     whileTap={{ scale: 0.98 }}
                     className="btn btn-primary"
                     onClick={runAll}
-                    disabled={anyRunning}
+                    disabled={anyRunning || !vsReady}
                     style={{ padding: '10px 20px' }}
                   >
                     {anyRunning
@@ -403,7 +416,7 @@ export default function Compare() {
                       key={subset.id}
                       className="btn btn-secondary btn-sm"
                       onClick={() => runSubset(subset)}
-                      disabled={anyRunning}
+                      disabled={anyRunning || !vsReady}
                       style={{ 
                         borderColor: running[subset.id] ? subset.color : 'var(--border2)', 
                         color: running[subset.id] ? subset.color : 'var(--text-secondary)',

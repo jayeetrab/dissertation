@@ -117,8 +117,8 @@ export default function Dashboard() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '32px' }}>
         <StatCard label="Total Tasks"   value={stats?.total_tasks}   sub="Across 5 categories" />
         <StatCard label="Tasks Run"     value={stats?.tasks_run}     sub="Results generated" />
-        <StatCard label="Tasks Scored"  value={stats?.tasks_auto_scored ?? stats?.tasks_scored}  sub="Rubric scored" />
-        <StatCard label="Chunks in DB"  value={stats?.chunks_in_db}  sub="Planning document segments" />
+        <StatCard label="Tasks Scored"  value={stats?.tasks_auto_scored || stats?.tasks_scored}  sub="Rubric scored" />
+        <StatCard label="Chunks in DB"  value={stats?.chunks_in_db || '—'}  sub={stats?.chunks_in_db ? 'Planning document segments' : 'Vector store not loaded here'} />
       </div>
 
       {/* Accuracy & Hallucination Stats */}
@@ -216,21 +216,16 @@ export default function Dashboard() {
               { step: '2', title: 'Run Experiment',   desc: 'Execute tasks through baseline and RAG systems', done: (stats?.tasks_run || 0) > 0 },
               { step: '3', title: 'Evaluate',         desc: 'Score outputs on accuracy and hallucination', done: (stats?.tasks_scored || 0) > 0 },
               { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: (stats?.tasks_run || 0) > 0 },
-            ].map((s, index) => (
-              <motion.div 
+            ].map((s, index, steps) => (
+              <motion.div
                 key={s.step}
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                style={{ 
+                style={{
                   display: 'flex', alignItems: 'center', gap: '16px',
                   padding: '12px 16px', background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)',
-                  opacity: (index > 0 && !s.done && !([
-              { step: '1', title: 'Ingest Documents', desc: 'Planning PDFs loaded into ChromaDB', done: vsReady || hasResults },
-              { step: '2', title: 'Run Experiment',   desc: 'Execute tasks through baseline and RAG systems', done: (stats?.tasks_run || 0) > 0 },
-              { step: '3', title: 'Evaluate',         desc: 'Manually score outputs on accuracy and hallucination', done: (stats?.tasks_scored || 0) > 0 },
-              { step: '4', title: 'Export Results',   desc: 'Download CSV for dissertation analysis', done: (stats?.tasks_run || 0) > 0 },
-            ][index - 1].done)) ? 0.3 : 1
+                  opacity: (index > 0 && !s.done && !steps[index - 1].done) ? 0.3 : 1
                 }}
               >
                 <div style={{
