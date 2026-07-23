@@ -26,3 +26,6 @@ results/results_2026*.json
 .DS_Store
 all_code.txt
 chroma_db.zip
+
+# Local pre-change backups
+results/*.bak

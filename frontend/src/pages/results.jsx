@@ -37,10 +37,10 @@ function CustomTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
   return (
     <div style={{
-      background: 'rgba(255, 255, 255, 0.9)', 
+      background: 'rgba(24, 24, 28, 0.97)',
       backdropFilter: 'blur(10px)',
       border: '1px solid var(--border)',
-      borderRadius: 'var(--radius-sm)', 
+      borderRadius: 'var(--radius-sm)',
       padding: '12px 16px',
       fontSize: '13px', color: 'var(--text-primary)',
       boxShadow: 'var(--shadow)'
@@ -486,7 +486,7 @@ export default function Results() {
                   if (!active || !payload?.length) return null
                   const d = payload[0]?.payload
                   return (
-                    <div style={{ background: 'rgba(255, 255, 255, 0.9)', backdropFilter: 'blur(10px)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '12px 16px', fontSize: '13px', boxShadow: 'var(--shadow)' }}>
+                    <div style={{ background: 'rgba(24, 24, 28, 0.97)', backdropFilter: 'blur(10px)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '12px 16px', fontSize: '13px', color: 'var(--text-primary)', boxShadow: 'var(--shadow)' }}>
                       <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--teal)', fontWeight: 600, marginBottom: '8px' }}>{d?.task_id}</div>
                       <div style={{ marginBottom: '4px' }}>Faithfulness: <strong>{d?.faithfulness?.toFixed(3)}</strong></div>
                       <div>Accuracy: <strong>{d?.accuracy}/5</strong></div>
